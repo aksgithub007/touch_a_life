@@ -495,6 +495,38 @@ color: #333;
   border:2px solid #7cc343;
 
 }
+.about-modal{
+background-color: rgba(0,0,0,0.6);
+
+}
+.about-modal .modal-content{
+  background-color: rgba(0,0,0,0.3);
+}
+.about-modal .modal-content .modal-header{
+  border: 0px;
+}
+.about-modal .modal-content .modal-header button{
+  font-size: 30px;
+  color: #7cc343;
+}
+.about-modal .modal-content .modal-header .modal-title{
+  font-size: 25px;
+  text-align: center;
+  font-weight: 600;
+  color: #fff;
+  margin-top:10px;
+}
+.about-modal .modal-content .modal-body img{
+  width: 80%;
+  margin-left:10%;
+}
+.about-modal .modal-content .modal-body p{
+   margin-top: 10px;
+    text-align:left;
+    font-size: 14px;
+    color: #fff;
+}
+
 /*--//About-- */
 /*--Services-- */
 .services {
@@ -1569,14 +1601,17 @@ button[type=submit] {
 		position: absolute;
 		width: 100%;
 		padding:0em 0;
-		background:rgba(0, 0, 0, 0.9);
+		background:#fff;
 		z-index: 9999;
-   
+   margin-top:20px;
     left: 0px;
 	}
-	
+	.menubar .navbar-default .navbar-nav > li a{
+    width: 100%;
+
+  }
 	.navbar-nav {
-    width: 15%;
+    width: 35%;
     margin: 0px auto;
     text-align: center;
 	padding:10px 0px ;
@@ -1585,15 +1620,13 @@ button[type=submit] {
      border: none; 
      background: #171616;
     border-radius: 5px;
-    color: #fff;
+    
 }
+
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
     background-color:#7cc343;
 }
-.navbar-default .navbar-nav > li > a {
-    padding: 11px 0px;
-    color: #fff;
-}
+
 .slider-info {
     padding: 5em 0em 0em 3em;
 }
@@ -1659,9 +1692,7 @@ ul.nav-buttom {
 }
 }
 @media(max-width:640px){
-.navbar-default .navbar-collapse, .navbar-default .navbar-form {
-    width: 100%;	
-}
+
 .jst-right {
     padding: 1.5em 1em;
 }
@@ -1733,10 +1764,15 @@ ul.nav-buttom {
 }
 }
 @media(max-width:480px){
-.menubar .navbar-default .navbar-nav > li > a {
-    font-size: 13px;
-    padding: 4px 15px;
+  .menubar .navbar .collapse .dropdown .dropdown-menu
+  {
+    background:#ffffff;
   }
+   .menubar .navbar .collapse 
+  {
+    background:#ffffff;
+  }
+
 .slider-info {
     padding: 3em 0em 0em 0em;
 	text-align:center;
@@ -1794,6 +1830,14 @@ ul.nav-buttom {
 }
 }
 @media(max-width:440px){
+  .menubar .navbar .collapse .dropdown .dropdown-menu
+  {
+    background:#ffffff;
+  }
+   .menubar .navbar .collapse 
+  {
+    background:#ffffff;
+  }
 .slider-info h4 {
     font-size: 2em;
 }
@@ -1814,6 +1858,15 @@ ul.nav-buttom {
 }
 }
 @media(max-width:414px){
+  .menubar .navbar .collapse .dropdown .dropdown-menu
+  {
+    background:#ffffff;
+  }
+   .menubar .navbar .collapse 
+  {
+    background:#ffffff;
+  }
+
 	.left-side h2 a {
     font-size: 26px;
 }
@@ -1839,26 +1892,46 @@ h4.modal-title {
 }
 }
 @media(max-width:384px){
+.cont_us li a{
+    font-size: 11px;
+    
+  }  
+  .menubar .navbar .collapse .dropdown .dropdown-menu
+  {
+    background:#ffffff;
+  }
+   .menubar .navbar .collapse 
+  {
+    background:#ffffff;
+  }
 	.slider-info h4 {
     font-size: 1.8em;
 }
 .slider-info p {
     line-height: 23px;
 }
-.navbar-nav {
-    width: 100%;
-}
+
 .title {
     font-size: 38px;
 }
 }
 @media(max-width:375px){
+.cont_us li a{
+    font-size: 10px;
+    
+  }  
+.menubar .navbar .collapse .dropdown .dropdown-menu
+{
+  background:#ffffff;
+}
+ .menubar .navbar .collapse 
+{
+  background:#ffffff;
+}
 	.its-banner-grid {
     padding: 2em .8em;
 }
-.navbar-default .navbar-collapse, .navbar-default .navbar-form {
-    width: 100%;
-}
+
 .aboutright h4 {
     font-size: 23px;
 }
@@ -1873,8 +1946,18 @@ h4.modal-title {
 }
 }
 @media(max-width:320px){
-	nav.navbar.navbar-default {
-    padding: 2em 1em 1em;
+  .cont_us li a{
+    font-size: 10px;
+    padding: 0px;
+  }
+   .menubar .navbar .collapse .dropdown .dropdown-menu
+  }
+{
+  background:#ffffff;
+}
+ .menubar .navbar .collapse 
+{
+  background:#ffffff;
 }
 .navbar-toggle {
     margin-top: 5px;
@@ -1892,9 +1975,9 @@ h4.modal-title {
 .outs_news_grid h6 {
     font-size: 15px;
 }
-.at-column {
+/*.at-column {
     width: 100%;
-}
+}*/
 .w3layouts_mail_grid_right input[type="submit"], .w3layouts_mail_grid_right input[type="reset"] {
     width: 43%;
 }
